@@ -8,6 +8,10 @@ data=pd.read_csv("Code1.csv")
 # Make a series of 1d data to pass to scatter plot
 X=data["area"]
 Y=data["price"]
+
+# give size to the figure in inch (need to be given before plotting)
+plt.figure(figsize=(10,5))
+
 # Call the plot function
 plt.scatter(X,Y,color='red')
 
@@ -15,6 +19,7 @@ plt.scatter(X,Y,color='red')
 plt.title("Powai Real Estate")
 plt.xlabel("Area")
 plt.ylabel("Price")
+
 
 # Display the plot on the screen
 plt.show()

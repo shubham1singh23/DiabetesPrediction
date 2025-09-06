@@ -15,7 +15,7 @@ model=LinearRegression()
 # fit using training data
 model.fit(x_train,y_train)
 
-# calculate score of training and testing data using model.score
+# calculate score of training and testing data using model.score using R sqaure text( Coefficient of determination)
 train_score=model.score(x_train,y_train)*100
 test_score=model.score(x_test,y_test)*100
 print("The training score is",train_score)

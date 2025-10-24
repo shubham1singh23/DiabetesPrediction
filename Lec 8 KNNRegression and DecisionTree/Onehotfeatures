@@ -1,0 +1,11 @@
+,AGE_MIDDLE,AGE_SENIOR,AGE_YOUNG,INCOME_HIGH,INCOME_LOW,INCOME_MEDIUM,CREDIT SCORE_FAIR,CREDIT SCORE_GOOD,CREDIT SCORE_POOR
+0,False,False,True,True,False,False,False,True,False
+1,False,False,True,False,True,False,True,False,False
+2,True,False,False,True,False,False,False,True,False
+3,True,False,False,False,True,False,False,False,True
+4,False,True,False,True,False,False,True,False,False
+5,False,True,False,False,True,False,False,True,False
+6,False,False,True,True,False,False,False,False,True
+7,True,False,False,False,False,True,False,True,False
+8,False,True,False,False,False,True,True,False,False
+9,False,False,True,False,False,True,True,False,False

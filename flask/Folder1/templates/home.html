@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Flask</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            background-color: #ecf0f1;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Flask Framework</h1>
+        <p>A Lightweight Python Web Framework</p>
+    </header>
+
+    <main>
+        <h2>What is Flask?</h2>
+        <p>
+            Flask is a lightweight and flexible web framework written in Python.
+            It is designed to make getting started with web development easy and
+            fast, while still allowing developers to scale up to complex applications.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>Lightweight and minimalistic</li>
+            <li>Built-in development server and debugger</li>
+            <li>RESTful request handling</li>
+            <li>Uses Jinja2 templating engine</li>
+            <li>Highly extensible with third-party plugins</li>
+        </ul>
+
+        <h2>Why Use Flask?</h2>
+        <p>
+            Flask is ideal for small to medium-sized applications, APIs, and
+            prototypes. It gives developers full control over the components
+            they want to use, without enforcing a rigid project structure.
+        </p>
+
+        <h2>Simple Example</h2>
+        <p>Below is a minimal Flask application:</p>
+        <pre>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello, Flask!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+        </pre>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Flask Overview Page</p>
+    </footer>
+
+</body>
+</html>

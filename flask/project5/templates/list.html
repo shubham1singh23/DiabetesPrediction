@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee List</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            margin: 30px;
+        }
+
+        table {
+            background: white;
+            border-collapse: collapse;
+            width: 80%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+        }
+
+        a {
+            padding: 6px 12px;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .edit { background: #38a169; }
+        .delete { background: #e53e3e; }
+
+        .nav {
+            margin: 20px;
+        }
+
+        .nav a {
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Employee Records</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for e in data %}
+    <tr>
+        <td>{{ e[0] }}</td>
+        <td>{{ e[1] }}</td>
+        <td>{{ e[2] }}</td>
+        <td>
+            <a class="edit" href="/edit/{{ e[0] }}">Edit</a>
+            <a class="delete" href="/delete/{{ e[0] }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<div class="nav">
+    <a href="/">Add Employee</a>
+</div>
+
+</body>
+</html>

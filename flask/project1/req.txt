@@ -1,0 +1,5 @@
+pip install flask
+pip install spacy
+pip install scikit-learn
+pip install PyPDF2
+python -m spacy download en_core_web_lg

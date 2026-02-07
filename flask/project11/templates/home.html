@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background: #667eea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(183, 255, 0);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Diabetes Prediction System</h1>
+
+<form method="POST">
+    <input type="number" name="glucose" placeholder="Glucose level" required>
+    <input type="number" name="bp" placeholder="Blood Pressure" required>
+    <input type="number" name="skin" placeholder="Skin Thickness" required>
+    <input type="number" name="insulin" placeholder="Insulin" required>
+    <input type="number" step="0.01" name="bmi" placeholder="BMI" required>
+    <input type="number" step="0.01" name="dpf" placeholder="Diabetes Pedigree Function" required>
+    <input type="number" name="age" placeholder="Age" required>
+
+    <input type="submit" value="Predict">
+</form>
+
+<h2>{{ msg }}</h2>
+
+</body>
+</html>

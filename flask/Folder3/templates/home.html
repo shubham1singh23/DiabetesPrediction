@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Submission</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+            box-sizing: border-box; /* ⭐ FIX */
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+
+        input:focus, textarea:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 6px rgba(102,126,234,0.5);
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: #667eea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            text-align: center;
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Query Submissions</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="enter name"/>
+        <br/>
+        <input type="number" name="phone" placeholder="enter phone"/>
+        <br/>
+        <textarea name="query" rows="10" cols="30"></textarea>
+        <br/>
+        <input type="submit"/>
+    </form>
+    <h2>{{msg}}</h2>
+</body>
+</html>

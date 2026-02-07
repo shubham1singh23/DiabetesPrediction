@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detection</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --border: #1f2933;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #6366f1;
+            --accent-soft: rgba(99, 102, 241, 0.15);
+            --spam: #ef4444;
+            --ham: #22c55e;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+            background: radial-gradient(circle at top, #1e293b 0%, #020617 60%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text);
+        }
+
+        .container {
+            width: 440px;
+            padding: 32px;
+            background: linear-gradient(
+                180deg,
+                rgba(17, 24, 39, 0.9),
+                rgba(17, 24, 39, 0.75)
+            );
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+        }
+
+        h2 {
+            margin: 0 0 14px 0;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        textarea {
+            width: 100%;
+            height: 140px;
+            padding: 14px;
+            font-size: 14px;
+            line-height: 1.5;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: rgba(2, 6, 23, 0.6);
+            color: var(--text);
+            resize: none;
+            outline: none;
+            transition: border 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        textarea::placeholder {
+            color: #6b7280;
+        }
+
+        textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-soft);
+        }
+
+        input[type="submit"] {
+            margin-top: 16px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: box-shadow 0.25s ease;
+        }
+
+        input[type="submit"]:hover {
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+        }
+
+        .button-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .half-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            color: var(--text);
+            font-size: 14px;
+            cursor: pointer;
+            transition: border-color 0.25s ease,
+                        box-shadow 0.25s ease,
+                        background 0.25s ease;
+        }
+
+        .half-btn:hover {
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 12px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid;
+        }
+
+        .spam {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.4);
+            color: #fecaca;
+        }
+
+        .ham {
+            background: rgba(34, 197, 94, 0.1);
+            border-color: rgba(34, 197, 94, 0.4);
+            color: #bbf7d0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Spam Detection</h2>
+
+    <form method="POST">
+        <textarea name="text" placeholder="Paste message content here..." required>{{body}}</textarea>
+        <input type="submit" value="Analyze">
+
+    </form>
+
+    <div class="button-row">
+        <form action="/check-recent" method="GET" style="flex:1;">
+            <input type="submit" value="Check Recent" class="half-btn">
+        </form>
+         <form action="/live" method="GET" style="flex:1;">
+            <input type="submit" value="Live Analysis" class="half-btn">
+        </form>
+    </div>
+
+    {% if result %}
+        <div class="result {% if result == 'spam' %}spam{% else %}ham{% endif %}">
+            {{ result | upper }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>

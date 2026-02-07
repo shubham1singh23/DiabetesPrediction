@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Resume Matcher</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f6f7fb;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 420px;
+            padding: 32px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            margin: 0;
+            margin-bottom: 8px;
+            font-size: 22px;
+            font-weight: 600;
+            color: #111827;
+            text-align: center;
+        }
+
+        p {
+            margin: 0 0 24px 0;
+            font-size: 14px;
+            color: #6b7280;
+            text-align: center;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #374151;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px dashed #d1d5db;
+            border-radius: 10px;
+            background: #fafafa;
+            font-size: 14px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        input[type="file"]:hover {
+            border-color: #6366f1;
+            background: #f5f7ff;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            border-radius: 10px;
+            border: none;
+            background: #6366f1;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        input[type="submit"]:hover {
+            background: #4f46e5;
+            transform: translateY(-1px);
+        }
+
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #16a34a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ATS Resume Matcher</h1>
+        <p>Upload resume and job description to check compatibility</p>
+
+        <form method="POST" enctype="multipart/form-data">
+            
+            <label>Resume (PDF)</label>
+            <input type="file" name="resume_pdf" accept=".pdf" required>
+
+            <label>Job Description (PDF)</label>
+            <input type="file" name="jd_pdf" accept=".pdf" required>
+
+            <input type="submit" value="Check Match">
+
+        </form>
+
+        <div class="result">
+            {{ msg }}
+        </div>
+    </div>
+
+</body>
+</html>

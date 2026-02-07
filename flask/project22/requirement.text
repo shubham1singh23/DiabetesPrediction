@@ -1,0 +1,14 @@
+#pip install imapclient
+#pip install pyzmail36
+
+raw_text_content = server.fetch([last_id],["BODY[]"])
+
+text_content = pyzmail.PyzMessage.factory(
+    raw_text_content[last_id][b"BODY[]"]
+)
+
+subject = text_content.get_subject()
+
+body = text_content.text_part.get_payload().decode(
+    text_content.text_part.charset
+)

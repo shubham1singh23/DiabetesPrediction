@@ -1,0 +1,171 @@
+food_name,matchers
+Paneer Butter Masala,paneer|creamy|north|curry|rich
+Chole Bhature,chole|spicy|punjabi|street|heavy
+Aloo Paratha,aloo|stuffed|north|breakfast|buttery
+Masala Dosa,dosa|crispy|south|breakfast|savory
+Idli Sambar,idli|soft|south|breakfast|comfort
+Vada Pav,vada|pav|mumbai|street|snack
+Pav Bhaji,bhaji|butter|street|spicy|tawa
+Vegetable Biryani,biryani|rice|fragrant|main|party
+Sambar Rice,rice|dal|tangy|south|comfort
+Curd Rice,curd|rice|cooling|south|simple
+Rajma Chawal,rajma|rice|punjabi|comfort|homely
+Dal Tadka,dal|ghee|north|protein|simple
+Dal Makhani,dal|creamy|rich|punjabi|slow
+Veg Pulao,pulao|rice|mild|quick|onepot
+Gobhi Manchurian,gobi|fried|indochinese|crispy|starter
+Veg Hakka Noodles,noodles|veg|indo|chinese|street
+Aloo Gobi,aloo|gobi|dry|sabzi|north
+Bhindi Masala,bhindi|dry|spicy|sabzi|simple
+Kadhai Paneer,kadhai|paneer|spicy|north|curry
+Palak Paneer,palak|paneer|green|healthy|creamy
+Matar Paneer,matar|paneer|tomato|north|homey
+Shahi Paneer,shahi|paneer|royal|creamy|festive
+Veg Kofta,kofta|gravy|rich|party|creamy
+Veg Cutlet,cutlet|crispy|snack|tiffin|starter
+Poha,poha|light|mumbai|breakfast|quick
+Upma,upma|soft|semolina|south|breakfast
+Khichdi,khichdi|comfort|light|onepot|soothing
+Dahi Puri,dahipuri|chaat|street|tangy|fun
+Sev Puri,sevpuri|chaat|tangy|street|snack
+Pani Puri,panipuri|chaat|spicy|street|party
+Bhel Puri,bhelpuri|puffed|chaat|tangy|mumbai
+Veg Momos,momos|steamed|indo|chinese|trending
+Paneer Momos,paneermomo|cheesy|steamed|indo|snack
+Rava Dosa,ravadosa|crispy|south|breakfast|thin
+Onion Uttapam,uttapam|onion|south|thick|topping
+Medu Vada,meduvada|fried|south|breakfast|crispy
+Vegetable Korma,korma|coconut|mild|south|comfort
+Avial,avial|kerala|coconut|veg|traditional
+Pesarattu,pesarattu|moong|south|protein|breakfast
+Gujarati Dhokla,dhokla|steamed|light|gujarati|snack
+Thepla,thepla|methi|flatbread|gujarati|travel
+Kadhi Chawal,kadhi|rice|tangy|comfort|simple
+Malai Kofta,malai|kofta|creamy|rich|party
+Tawa Pulao,tawapulao|street|spicy|mumbai|rice
+Hara Bhara Kabab,harabharakabab|green|healthy|starter|veg
+Mushroom Masala,mushroom|gravy|umami|north|curry
+Aloo Tikki,alootikki|crispy|street|snack|chaat
+Khaman,khaman|soft|steamed|gujarati|snack
+Jeera Rice,jeerarice|simple|rice|mild|side
+Lemon Rice,lemonrice|tangy|south|quick|travel
+Chapati,chapati|flatbread|daily|simple|homely
+Poori Bhaji,poori|bhaji|fried|breakfast|festive
+Pongal,pongal|rice|dal|south|comfort
+Misal Pav,misalpav|spicy|maharashtra|street|protein
+Kanda Poha,kandapoha|onion|mumbai|breakfast|light
+Sabudana Khichdi,sabudana|fasting|light|maharashtra|breakfast
+Sabudana Vada,sabudanavada|crispy|fried|snack|festive
+Veg Sandwich,sandwich|quick|snack|bread|tiffin
+Bombay Sandwich,bombaysandwich|layered|mint|street|snack
+Paneer Tikka,panertikka|grilled|starter|tandoor|smoky
+Tandoori Roti,tandooriroti|bread|tandoor|north|flat
+Naan,naan|soft|bread|restaurant|fluffy
+Garlic Naan,garlicnaan|garlic|buttery|bread|restaurant
+Veg Fried Rice,friedrice|indo|chinese|quick|veg
+Paneer Fried Rice,paneerfriedrice|cheesy|fried|indo|rice
+Schezwan Fried Rice,schezwan|spicy|fried|noodles|indo
+Veg Spring Roll,springroll|fried|crispy|starter|indo
+Gajar Halwa,gajar|halwa|sweet|dessert|winter
+Gulab Jamun,gulabjamun|syrupy|sweet|dessert|classic
+Rasgulla,rasgulla|spongy|sweet|bengali|dessert
+Kesar Peda,peda|sweet|milk|festive|compact
+Kheer,kheer|rice|milk|dessert|comfort
+Sheera,sheera|semolina|sweet|temple|simple
+Aloo Poha Cutlet,poha_cutlet|fusion|crispy|snack|tiffin
+Veg Patty,vegpatties|bakery|crispy|snack|street
+Veg Thali,vegthali|variety|fullmeal|north|platter
+South Indian Thali,souththali|variety|fullmeal|south|platter
+Bhatura,bhatura|fried|bread|punjabi|big
+Dosa Roll,dosaroll|fusion|street|crispy|portable
+Paneer Roll,paneroll|street|cheesy|snack|wrap
+Veg Frankie,frankie|roll|street|mumbai|quick
+Corn Chat,cornchat|tangy|street|snack|light
+Masala Corn,masalacorn|butter|tangy|snack|street
+Schezwan Dosa,schezwandos a|fusion|spicy|dosa|street
+Pizza Dosa,pizzadosa|cheesy|fusion|dosa|trending
+Idiyappam,idiyappam|stringhoppers|south|light|rice
+Appam,appam|soft|fermented|kerala|breakfast
+Mysore Masala Dosa,mysoredosa|spicy|buttery|south|classic
+Roti,roti|bread|daily|simple|homely
+Paratha,paratha|layered|buttery|north|breakfast
+Veg Handi,veghandi|handi|creamy|north|curry
+Paneer Handi,paneerhandi|creamy|rich|north|special
+Veg Jalfrezi,jalfrezi|stirfry|spicy|north|tawa
+Kadai Veg,kadaiveg|kadai|spicy|stirfry|north
+Makhani Veg,makhani|creamy|tomato|rich|north
+Paneer Lababdar,lababdar|paneer|rich|creamy|restaurant
+Chole Kulche,cholekulche|street|punjabi|breakfast|snack
+Masala Khichdi,masalakichdi|spiced|comfort|onepot|quick
+Idli Fry,idlify|fried|crispy|street|fusion
+Ghee Roast,gheeroast|ghee|crispy|south|rich
+Rasam Rice,rasamrice|tangy|south|light|comfort
+Puri Sabzi,purisabzi|puri|vegetable|north|breakfast
+Methi Thepla,methithepla|methi|flatbread|gujarati|travel
+Bengali Thali,bengalithali|variety|fishless|platter|regional
+Dhokla Sandwich,dhoklasandwich|fusion|soft|snack|gujarati
+Sprouts Salad,sproutssalad|healthy|light|tiffin|protein
+Mixed Veg Kurma,vegkurma|coconut|mild|south|curry
+Soya Chaap,soya|chaap|grilled|starter|protein
+Paneer Bhurji,paneerbhurji|scramble|breakfast|quick|spicy
+Keema Pav (Mock),mockkeema|soya|pav|street|hearty
+Methi Malai Mutter,methimalai|methi|creamy|north|seasonal
+Veg Seekh Kebab,seekhkebab|grilled|starter|smoky|veg
+Tamarind Rice,tamarindrice|south|tangy|rice|travel
+Coconut Rice,coconutrice|south|coconut|aromatic|rice
+Veg Schezwan Noodles,schezwannoodles|spicy|noodles|indo|street
+Paneer Chili,paneerchili|spicy|indo|starter|sizzler
+Bombay Potatoes,bombaypotato|spicy|aloo|street|side
+Patra,patra|farsan|steamed|gujarati|tiffin
+Aamras, aamras|mango|sweet|summer|dessert
+Stuffed Capsicum,stuffedcapsicum|baked|veg|main|healthy
+Mushroom 65,mushroom65|spicy|starter|crispy|indian
+Corn Kachori,cornkachori|fried|snack|stuffed|street
+Plain Dosa,plaindosa|classic|south|breakfast|crispy
+Pudhina Chutney,pudhinachutney|mint|condiment|tangy|side
+Spring Hakka Roll,springhakka|indo|crispy|starter|roll
+Veg Manchow Soup,manchowsoup|noodle|spicy|starter|comfort
+Tomato Saar,tomatosaar|light|tangy|south|soup
+Moong Dal Halwa,moongdalhalwa|sweet|rich|dessert|festive
+Bajra Roti,bajraroti|millet|flatbread|healthy|rustic
+Makki Ki Roti,makkiroti|corn|flatbread|rustic|punjabi
+Sarso Ka Saag,sarsosaag|mustard|leafy|winter|north
+Corn Pakora,cornpakora|crispy|snack|fried|monsoon
+Mirchi Bajji,mirchibajji|chili|fried|spicy|snack
+Aam Panna,aampanna|refreshing|cool|summer|drink
+Jaljeera,jaljeera|tangy|drink|street|appetizer
+Nutritional Ladoo,nutritional|ladoo|healthy|sweet|energy
+Bread Upma,breadupma|fusion|quick|breakfast|tiffin
+Masala Maggi,masalamaggi|instant|street|snack|student
+Cheesy Corn Sandwich,cheesycorn|sandwich|gooey|snack|street
+Veg Calzone,vegcalzone|fusion|baked|snack|cheesy
+Millet Idli,milletidli|healthy|south|steamed|breakfast
+Ragi Dosa,ragidosa|millet|healthy|south|breakfast
+Kuttu Paratha,kuttuparatha|buckwheat|fasting|breakfast|rustic
+Makhana Kheer,makhanakheer|light|sweet|festive|puffed
+Schezwan Paneer,schezwanpaneer|spicy|indo|starter|sauté
+Veg Banjara Pulao,banjarapulao|spicy|rice|onepot|rustic
+Kartoffel Curry (Fusion),kartoffelcurry|fusion|comfort|curry|spiced
+Cucumber Raita,cucumberraita|cooling|side|yogurt|refreshing
+Zunka Bhakar,zunkabhakar|maharashtra|peanut|rustic|protein
+Sabzi Khichdi,sabzikichdi|veg|onepot|comfort|simple
+Methi Rice,methirice|methi|rice|flavorful|seasonal
+Sweet Pongal,sweetpongal|dessert|south|festive|rice
+Pesarattu Upma,pesarattuupma|protein|breakfast|south|fusion
+Kashmiri Pulao,kashmiripulao|fruity|rice|mild|festive
+Mawa Malpua,mawamalpua|sweet|fried|festive|dessert
+Mango Shrikhand,mangoshri khand|sweet|mango|dessert|cooling
+Sattu Paratha,sattuparatha|protein|north|flatbread|hearty
+Aloo Methi,alo methi|homey|dry|sabzi|simple
+Kala Chana Sundal,kalachana|sundal|protein|south|snack
+Dahi Vada,dahivada|dahi|soft|chaat|tangy
+Baingan Bharta,baingan|smoky|roasted|north|curry
+Motta Pulao,mottapulao|peanut|rice|rich|festive
+Methi Muthia,methimuthia|gujarati|snack|steamed|healthy
+Schezwan Idli,schezwanidli|fusion|spicy|breakfast|trending
+Aloo Matar,alo matar|simple|curry|north|home
+Paneer Jalebi,paneerjalebi|dessert|fusion|sweet|festive
+Spinach Corn Cutlet,spinachcorn|cutlet|crispy|snack|healthy
+Veg Fried Wonton,vegwonton|crispy|starter|fusion|street
+Coconut Ladoo,coconutladoo|sweet|festival|south|bite
+Methi Pakora,methipakora|fritters|snack|monsoon|spicy
